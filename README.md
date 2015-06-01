@@ -43,8 +43,6 @@ Including In Your Project
 For now the library is not available via Maven Central.
 I will upload it to it as soon as I find reasonable parameter values for the library to work correctly.
 
-Until then you can use [JitPack.io](https://jitpack.io/) to easily get the code.
-
 Developed by
 ==========
  * Bartosz Lipiński
