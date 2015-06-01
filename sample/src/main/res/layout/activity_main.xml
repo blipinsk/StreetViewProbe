@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnight_blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingBottom="@dimen/title_padding"
+        android:paddingTop="@dimen/title_padding"
+        android:text="@string/app_name"
+        android:textColor="@color/clouds"
+        android:textSize="32sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.bartoszlipinski.streetviewprobe.sample.view.SquareImageView
+            android:id="@+id/image_street_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/screen_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/streetview" />
+
+        <ImageView
+            android:id="@+id/image_dot"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignRight="@+id/image_street_view"
+            android:layout_alignBottom="@+id/image_street_view"
+            android:padding="@dimen/screen_padding"
+            android:layout_margin="8dp"
+            android:src="@drawable/selector_circle" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:text="@string/lat"
+        android:textColor="@color/clouds"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="@string/lon"
+        android:textColor="@color/clouds"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_avaiability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/screen_padding"
+        android:text="@string/available"
+        android:textColor="@color/selector_available_unavailable"
+        android:textSize="20sp" />
+
+</LinearLayout>

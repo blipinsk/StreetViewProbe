@@ -1,0 +1,4 @@
+<resources>
+    <!--<string name="app_name">StreetViewProbe</string>-->
+    <string name="probe_path">http://maps.googleapis.com/maps/api/streetview?size=%1$dx%1$d&amp;location=%2$f,%3$f</string>
+</resources>

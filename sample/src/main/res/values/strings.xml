@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StreetViewProbe</string>
+    <string name="available">avaliable</string>
+    <string name="unavailable">unavaliable</string>
+    <string name="lat">lat = %1$f</string>
+    <string name="lon">lon = %1$f</string>
+</resources>
