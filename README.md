@@ -24,7 +24,7 @@ Usage
 =====
 *For a working implementation of this library see the `sample/` folder.*
 
-  1. Add Square's `Okio` dependency to your build.gradle:
+  1. Add [Square's](https://github.com/square) [`Okio`](https://github.com/square/okio) dependency to your build.gradle:
 
         compile 'com.squareup.okio:okio:1.4.0'
 
