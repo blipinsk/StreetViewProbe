@@ -30,7 +30,7 @@ Usage
 
   2. Well... `probe` with `StreetViewProbe`:
 
-        StreetViewProbe.with(this).probe(LAT, LON, new StreetViewProbe.OnStreetViewStatusListener() {
+        StreetViewProbe.with(context).probe(LAT, LON, new StreetViewProbe.OnStreetViewStatusListener() {
             @Override
             public void onStreetViewStatus(StreetViewProbe.Status status) {
                 //street view status is available
