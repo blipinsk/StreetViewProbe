@@ -27,8 +27,9 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by Bartosz Lipinski.
+ * Created by Bartosz Lipinski
  * 29.05.15
+ * Available at: https://github.com/blipinsk/StreetViewProbe
  */
 public class StreetViewProbe {
     private static StreetViewProbe sInstance = null;
@@ -86,12 +87,14 @@ public class StreetViewProbe {
         }).start();
     }
 
-    public enum Status {
-        AVAILABLE, UNAVAILABLE, UNKONWN
+    public static abstract class Status {
+        public static final int UNKONWN = 0;
+        public static final int AVAILABLE = 1;
+        public static final int UNAVAILABLE = 2;
     }
 
     public static interface OnStreetViewStatusListener {
-        public void onStreetViewStatus(Status status);
+        public void onStreetViewStatus(int status);
     }
 
     public static class Builder {

@@ -77,26 +77,26 @@ public class MainActivity extends Activity {
 
         StreetViewProbe.with(this).probe(LAT, LON, new StreetViewProbe.OnStreetViewStatusListener() {
             @Override
-            public void onStreetViewStatus(final StreetViewProbe.Status status) {
+            public void onStreetViewStatus(final int status) {
                 MainActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         switch (status) {
-                            case AVAILABLE:
+                            case StreetViewProbe.Status.AVAILABLE:
                                 mTextAvailability.setVisibility(View.VISIBLE);
                                 mDotImage.setVisibility(View.VISIBLE);
                                 mTextAvailability.setText(R.string.available);
                                 mTextAvailability.setSelected(true);
                                 mDotImage.setSelected(true);
                                 break;
-                            case UNAVAILABLE:
+                            case StreetViewProbe.Status.UNAVAILABLE:
                                 mTextAvailability.setVisibility(View.VISIBLE);
                                 mDotImage.setVisibility(View.VISIBLE);
                                 mTextAvailability.setText(R.string.unavailable);
                                 mTextAvailability.setSelected(false);
                                 mDotImage.setSelected(false);
                                 break;
-                            case UNKONWN:
+                            case StreetViewProbe.Status.UNKONWN:
                                 break;
                         }
                     }
