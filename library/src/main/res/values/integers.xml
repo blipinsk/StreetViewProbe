@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="probe_default_size">300</integer>
-    <integer name="availability_threshold">3700</integer>
+    <integer name="availability_threshold">4500</integer>
 </resources>

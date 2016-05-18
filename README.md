@@ -1,10 +1,11 @@
 StreetViewProbe
 ===============
 
-[![License](https://img.shields.io/github/license/blipinsk/FlippableStackView.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License](https://img.shields.io/github/license/blipinsk/StreetViewProbe.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
 A simple (although a bit hacky) way to check if StreetView is available for a specific location.
 
+Since there seems to be no other (more elegant) way to do that I needed to implement a
 It's just a small piece of code (inspired by [this post](http://stackoverflow.com/a/25059956/1993204)), that I needed for one of my projects.
 It's based on downloading StreetView screen (with OkHttp) and deciding based on its size whether it contains a placeholder or actual StreetView image.
 Until I find reliable values of screen dimensions, and size availability threshold, this library will be in pre-release state.
@@ -32,7 +33,7 @@ Usage
 
         StreetViewProbe.with(context).probe(LAT, LON, new StreetViewProbe.OnStreetViewStatusListener() {
             @Override
-            public void onStreetViewStatus(StreetViewProbe.Status status) {
+            public void onStreetViewStatus(@StreetViewProbe.Status int status) {
                 //street view status is available
             }
         });
