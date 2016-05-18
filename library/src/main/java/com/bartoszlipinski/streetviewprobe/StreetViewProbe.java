@@ -17,7 +17,6 @@ package com.bartoszlipinski.streetviewprobe;
 
 import android.content.Context;
 import android.support.annotation.IntDef;
-import android.util.Log;
 
 import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.OkHttpClient;
